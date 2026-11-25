@@ -102,3 +102,38 @@ button {
   display: none;
   white-space: pre-line;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .editor {
+    height: 240px;
+  }
+
+  .line-numbers {
+    width: 34px;
+    padding: 10px 6px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  textarea {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
