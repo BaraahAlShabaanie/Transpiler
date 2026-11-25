@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تحويل C++ إلى JavaScript</title>
+  <link rel="stylesheet" href="master.css" />
+</head>
+<body>
+  <h2>محوّل كود من C++ إلى JavaScript</h2>
+
+  <div class="container">
+    <div class="box">
+      <label>كود C++</label>
+      <div class="editor">
+        <div class="line-numbers" id="cppLines">1</div>
+        <textarea id="cppInput">#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 10;
+    int y = 5;
+
+    if (x > y &amp;&amp; y != 0) {
+        cout &lt;&lt; "x is bigger: " &lt;&lt; x &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "y is bigger" &lt;&lt; endl;
+    }
+
+    for (int i = 0; i &lt; 3; i++) {
+        cout &lt;&lt; "Count: " &lt;&lt; i &lt;&lt; endl;
+    }
+
+    int n;
+    cin &gt;&gt; n;
+    while (n > 0) {
+        n = n - 1;
+    }
+    return 0;
+}</textarea>
+      </div>
+    </div>
+
+    <div class="box">
+      <label>كود JavaScript الناتج</label>
+      <div class="editor">
+        <div class="line-numbers" id="jsLines">1</div>
+        <textarea id="jsOutput" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <button id="convertBtn">تحويل الكود</button>
+  <div id="errorBox"></div>
+
+  <script src="errorHandler.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
